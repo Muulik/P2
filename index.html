@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href = "style.css" />
+        <link rel="stylesheet" href = "normalize.css" /> <!-- Pas sûr de ça-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4fc2a1135c.js" crossorigin="anonymous"></script>
+
+        <title>Booki</title>
+    </head>
+
+    <body>
+        <div id="bloc_page"> <!--Pas sûr de ça-->
+            <header>
+                <img src="Images/logo/Booki.png" alt="Booki" id="booki_img">
+                <nav id="nav">
+                    <a href="#Hébergements_nav" id="hébergements_nav">Hébergements</a>
+                    <a href="#Activités_nav" id="activités_nav">Activités</a>
+                </nav>
+            </header>
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <form method="post" action="#">
+                <i class="fa-solid fa-location-dot" id="lieu_icon"></i>
+                <label for="lieu"></i></label>
+                <input type="text" name="lieu" id="lieu" value="Marseille, France" />
+                <input type="submit" value="Rechercher" class="submit"/>
+            </form>
+
+            
+            <div id="filtres">
+                <h2>Filtres</h2>
+                <div class="filtre_économique">
+                    <div class="icone"><i class="fa-solid fa-money-bill-wave"></i></div>
+                    <p class="filtre">Économique</p>
+                </div>
+                <div class="filtre_familial">
+                    <div class="icone"><i class="fa-solid fa-child-reaching"></i></div>
+                    <p class="filtre">Familial</p>
+                </div>
+                <div class="filtre_romantique">
+                    <div class="icone"><i class="fa-solid fa-heart"></i></div>
+                    <p class="filtre">Romantique</p>
+                </div>
+                <div class="filtre_animaux_aut">
+                    <div class="icone"><i class="fa-solid fa-dog"></i></div>
+                    <p class="filtre">Animaux autorisés</p>
+                </div>
+            </div>
+
+            <div class="loge_dispo">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+            
+
+        </div>
+
+    </body>
+</html>

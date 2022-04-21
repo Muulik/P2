@@ -1,0 +1,166 @@
+body
+{
+    font-family: 'Raleway', serif;
+}
+
+#bloc_page
+{
+    width: 992px;
+    margin: auto;
+}
+
+*{
+    box-sizing: border-box;
+ }
+
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#booki_img
+{
+    padding: 20px 60px;
+}
+
+#nav
+{
+    display:flex;
+}
+
+#hébergements_nav, #activités_nav
+{
+    padding: 50px 30px;
+    font-size: large;
+}
+
+#hébergements_nav:hover, #activités_nav:hover
+{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+h1
+{
+    font-size: 16px;
+}
+
+form
+{
+    display:flex;
+}
+
+input
+{
+    border: 1px solid #f2f2f2;
+}
+
+#lieu_icon
+{
+    border: 1px solid #f2f2f2;
+    border-width: 20px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.submit
+{
+    font-size:large;
+    font-weight: bold;
+    color: white;
+    background-color: #0065FC;
+    border-right: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px;
+}
+
+#filtres
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    align-items: baseline;
+}
+
+.filtre_économique, .filtre_familial, .filtre_romantique, .filtre_animaux_aut
+{
+    display: flex;
+    align-items: baseline;
+    margin: 5px 5px;
+    justify-content: flex-start;
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+.filtre
+{
+    padding-left: 20px ;
+}
+
+.icone
+{
+    background-color: #deebff;
+    margin-left: -15px;
+    margin-top: 0px;
+    padding: 10px;
+    border: 10px solid #deebff;
+    border-radius: 90px;
+}
+
+.loge_dispo
+{
+    display: flex;
+    align-items: baseline;
+}
+
+/** Media Queries **/
+
+@media screen and (max-width: 992px)
+{
+    #bloc_page
+    {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #bloc_page
+    {
+        width: min-content;
+    }
+
+    #booki_img
+    {
+        padding: 20px 100px;
+        margin: left;
+    }
+
+    #hébergements_nav, #activités_nav
+    {
+        padding: 10px 30px;
+        font-size: large;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    #hébergements_nav:hover, #activités_nav:hover
+    {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+
+    #filtres
+    {
+        flex-direction: column;
+    }
+}
