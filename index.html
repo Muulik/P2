@@ -15,7 +15,7 @@
     <body>
         <div id="bloc_page"> <!--Pas sûr de ça-->
             <header>
-                <img src="images/logo/Booki.png" alt="Booki" id="booki_img">
+                <img src="images/logo/Booki@2x.png" alt="Booki" id="booki_img">
                 <nav id="nav">
                     <a href="#hebergements_et_pop" class="nav_bouton">Hébergements</a>
                     <a href="#activites_marseille" class="nav_bouton">Activités</a>
@@ -28,7 +28,7 @@
             <!-- Formulaire de recherche -->
             <form method="post" action="#">
                 <i class="fa-solid fa-location-dot" id="lieu_icon"></i>
-                <label for="lieu"></i></label>
+                <label for="lieu"></label>
                 <input type="text" name="lieu" id="lieu" value="Marseille, France" />
                 <input type="submit" value="Rechercher" class="submit"/>
             </form>
@@ -38,24 +38,26 @@
             <div id="filtres">
                 <h2>Filtres</h2>
 
-                <div class="filtre">
-                    <div class="icone"><i class="fa-solid fa-money-bill-wave"></i></div>
-                    <p class="filtre_text">Économique</p>
-                </div>
-
-                <div class="filtre">
-                    <div class="icone"><i class="fa-solid fa-child-reaching"></i></div>
-                    <p class="filtre_text">Familial</p>
-                </div>
-
-                <div class="filtre">
-                    <div class="icone"><i class="fa-solid fa-heart"></i></div>
-                    <p class="filtre_text">Romantique</p>
-                </div>
-
-                <div class="filtre">
-                    <div class="icone"><i class="fa-solid fa-dog"></i></div>
-                    <p class="filtre_text">Animaux autorisés</p>
+                <div class="filtre_bloc">
+                    <div class="filtre">
+                        <div class="icone"><i class="fa-solid fa-money-bill-wave"></i></div>
+                        <p class="filtre_text">Économique</p>
+                    </div>
+    
+                    <div class="filtre">
+                        <div class="icone"><i class="fa-solid fa-child-reaching"></i></div>
+                        <p class="filtre_text">Familial</p>
+                    </div>
+    
+                    <div class="filtre">
+                        <div class="icone"><i class="fa-solid fa-heart"></i></div>
+                        <p class="filtre_text">Romantique</p>
+                    </div>
+    
+                    <div class="filtre">
+                        <div class="icone"><i class="fa-solid fa-dog"></i></div>
+                        <p class="filtre_text">Animaux autorisés</p>
+                    </div>
                 </div>
             </div>
             <!--Fin de Filtres-->
@@ -70,7 +72,7 @@
 
                 <div class="hebergements_marseille">
                     <div class="titre">
-                        <h2 class="h2_style">Hébergements à Marseille</h2>
+                        <h2 class="h2_style h2_style2">Hébergements à Marseille</h2>
                     </div>
                     
                     <div class="hebergements_card">
@@ -82,7 +84,7 @@
     
                                     <div class="card_titre">
                                         <h3>Auberge La Cannebière</h3>
-                                        <p>Nuit à partir de 25€</p>
+                                        <p>Nuit à partir de <span class="gras">25€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -90,7 +92,7 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                                        <i class="fa-solid fa-star gris"></i>
                                     </div>
                                 </div>
                             </a>
@@ -104,7 +106,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel du Port</h3>
-                                        <p>Nuit à partir de 52€</p>
+                                        <p>Nuit à partir de <span class="gras">52€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -126,7 +128,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel Les Mouettes</h3>
-                                        <p>Nuit à partir de 76€</p>
+                                        <p>Nuit à partir de <span class="gras">76€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -134,7 +136,7 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                                        <i class="fa-solid fa-star gris"></i>
                                     </div>
                                 </div>
                             </a>
@@ -148,15 +150,15 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel de la mer</h3>
-                                        <p>Nuit à partir de 46€</p>
+                                        <p>Nuit à partir de <span class="gras">46€</span></p>
                                     </div>
                         
                                     <div class="card_note">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star" style="color: gray;"></i>
-                                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                                        <i class="fa-solid fa-star gris"></i>
+                                        <i class="fa-solid fa-star gris"></i>
                                     </div>
                                 </div>
                             </a>
@@ -170,7 +172,7 @@
     
                                     <div class="card_titre">
                                         <h3>Auberge Le Panier</h3>
-                                        <p>Nuit à partir de 23€</p>
+                                        <p>Nuit à partir de <span class="gras">23€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -178,7 +180,7 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                                        <i class="fa-solid fa-star gris"></i>
                                     </div>
                                 </div>
                             </a>
@@ -192,7 +194,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel chez Amina</h3>
-                                        <p>Nuit à partir de 25€</p>
+                                        <p>Nuit à partir de <span class="gras">25€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -200,13 +202,13 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                                        <i class="fa-solid fa-star gris"></i>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <p>Afficher plus</p>
+                    <p class="p_style gras">Afficher plus</p>
                 </div>
 
                 <div class="populaires">
@@ -223,7 +225,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel Le Soleil du matin</h3>
-                                        <p>Nuit à partir de 28€</p>
+                                        <p>Nuit à partir de <span class="gras">28€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -244,7 +246,7 @@
     
                                     <div class="card_titre">
                                         <h3>Au coeur de l'eau Chambre d'hôtes</h3>
-                                        <p>Nuit à partir de 71€</p>
+                                        <p>Nuit à partir de <span class="gras">71€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -252,7 +254,7 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                                        <i class="fa-solid fa-star gris"></i>
                                     </div>
                                 </div>
                             </a>
@@ -265,7 +267,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel Tout bleu et Blanc</h3>
-                                        <p>Nuit à partir de 71€</p>
+                                        <p>Nuit à partir de <span class="gras">71€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -273,7 +275,7 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star" style="color:gray"></i>
+                                        <i class="fa-solid fa-star gris"></i>
                                     </div>
                                 </div>
                             </a>
@@ -286,7 +288,7 @@
             <!-- Fin de section Hébergements et les plus populaires -->
 
             <section id="activites_marseille">
-                <h2 class="h2_style">Activités à Marseille</h2>
+                <h2 class="h2_style h2_style2">Activités à Marseille</h2>
 
                 <div class="activites_marseille_bloc">
                     <div class="activites_card">
@@ -294,28 +296,28 @@
                             <div class="card_image_portrait"><img src="images/activites/4_small/vieux_port.jpg" alt="auberge" /></div>
                     
                             <div class="card_titre">
-                                <p class="gras">Vieux Port</p>
+                                <p class="gras style_titre">Vieux Port</p>
                             </div>
                         </a>
                     </div>
                     
                     <div class="row">
-                        <div class="activites_card_paysage">
+                        <div class="activites_card_paysage fort_pomegues">
                             <a href="#">
-                                <div class="card_image_paysage"><img src="images/activites/4_small/pomègues.jpg" alt="auberge" /></div>
+                                <div class="card_image_paysage pomegues_image"><img src="images/activites/4_small/pomègues.jpg" alt="auberge" /></div>
                         
                                 <div class="card_titre">
-                                    <p class="gras">Fort de Pomègues</p>
+                                    <p class="gras style_titre">Fort de Pomègues</p>
                                 </div>
                             </a>
                         </div>
         
-                        <div class="activites_card_paysage">
+                        <div class="activites_card_paysage frioul">
                             <a href="#">
-                                <div class="card_image_paysage"><img src="images/activites/4_small/frioul.jpg" alt="auberge" /></div>
+                                <div class="card_image_paysage frioul_image"><img src="images/activites/4_small/frioul.jpg" alt="auberge" /></div>
                         
                                 <div class="card_titre">
-                                    <p class="gras">Îles du Frioul</p>
+                                    <p class="gras style_titre">Îles du Frioul</p>
                                 </div>
                             </a>
                         </div>
@@ -327,7 +329,7 @@
                             <div class="card_image_portrait"><img src="images/activites/4_small/calanques.jpg" alt="auberge" /></div>
                     
                             <div class="card_titre">
-                                <p class="gras">Parc National des Calanques</p>
+                                <p class="gras style_titre">Parc National des Calanques</p>
                             </div>
                         </a>
                     </div>
@@ -338,7 +340,7 @@
                                 <div class="card_image_paysage"><img src="images/activites/4_small/notre_dame.jpg" alt="auberge" /></div>
                         
                                 <div class="card_titre">
-                                    <p class="gras">Notre-Dame-de-la-Garde</p>
+                                    <p class="gras style_titre">Notre-Dame-de-la-Garde</p>
                                 </div>
                             </a>
                         </div>
@@ -348,7 +350,7 @@
                                 <div class="card_image_paysage"><img src="images/activites/4_small/longchamp.jpg" alt="auberge" /></div>
                         
                                 <div class="card_titre">
-                                    <p class="gras">Parc Longchamp</p>
+                                    <p class="gras style_titre">Parc Longchamp</p>
                                 </div>
                             </a>
                         </div>
