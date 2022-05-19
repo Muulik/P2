@@ -29,7 +29,7 @@
             <form method="post" action="#">
                 <i class="fa-solid fa-location-dot" id="lieu_icon"></i>
                 <label for="lieu"></label>
-                <input type="text" name="lieu" id="lieu" value="Marseille, France" />
+                <input type="text" name="lieu" id="lieu" value="Marseille, France" class="gras"/>
                 <input type="submit" value="Rechercher" class="submit"/>
             </form>
             <!-- Fin de formulaire de recherche -->
@@ -63,7 +63,7 @@
             <!--Fin de Filtres-->
 
             <div class="loge_dispo">
-                <i class="fa-solid fa-circle-info"></i>
+                <i class="fa-solid fa-circle-info card_note"></i>
                 <p class="text_info">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
@@ -84,7 +84,7 @@
     
                                     <div class="card_titre">
                                         <h3>Auberge La Cannebière</h3>
-                                        <p>Nuit à partir de <span class="gras">25€</span></p>
+                                        <p class="p_hebergements">Nuit à partir de <span class="gras">25€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -106,7 +106,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel du Port</h3>
-                                        <p>Nuit à partir de <span class="gras">52€</span></p>
+                                        <p class="p_hebergements">Nuit à partir de <span class="gras">52€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -128,7 +128,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel Les Mouettes</h3>
-                                        <p>Nuit à partir de <span class="gras">76€</span></p>
+                                        <p class="p_hebergements">Nuit à partir de <span class="gras">76€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -150,7 +150,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel de la mer</h3>
-                                        <p>Nuit à partir de <span class="gras">46€</span></p>
+                                        <p class="p_hebergements">Nuit à partir de <span class="gras">46€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -172,7 +172,7 @@
     
                                     <div class="card_titre">
                                         <h3>Auberge Le Panier</h3>
-                                        <p>Nuit à partir de <span class="gras">23€</span></p>
+                                        <p class="p_hebergements">Nuit à partir de <span class="gras">23€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -194,7 +194,7 @@
     
                                     <div class="card_titre">
                                         <h3>Hôtel chez Amina</h3>
-                                        <p>Nuit à partir de <span class="gras">25€</span></p>
+                                        <p class="p_hebergements">Nuit à partir de <span class="gras">25€</span></p>
                                     </div>
                         
                                     <div class="card_note">
@@ -223,7 +223,7 @@
                         
                                 <div class="card_body_pop">
     
-                                    <div class="card_titre">
+                                    <div class="card_titre_pop">
                                         <h3>Hôtel Le Soleil du matin</h3>
                                         <p>Nuit à partir de <span class="gras">28€</span></p>
                                     </div>
@@ -244,7 +244,7 @@
                         
                                 <div class="card_body_pop">
     
-                                    <div class="card_titre">
+                                    <div class="card_titre_pop">
                                         <h3>Au coeur de l'eau Chambre d'hôtes</h3>
                                         <p>Nuit à partir de <span class="gras">71€</span></p>
                                     </div>
@@ -265,7 +265,7 @@
                         
                                 <div class="card_body_pop">
     
-                                    <div class="card_titre">
+                                    <div class="card_titre_pop">
                                         <h3>Hôtel Tout bleu et Blanc</h3>
                                         <p>Nuit à partir de <span class="gras">71€</span></p>
                                     </div>
@@ -288,14 +288,14 @@
             <!-- Fin de section Hébergements et les plus populaires -->
 
             <section id="activites_marseille">
-                <h2 class="h2_style h2_style2">Activités à Marseille</h2>
+                <h2>Activités à Marseille</h2>
 
                 <div class="activites_marseille_bloc">
                     <div class="activites_card">
                         <a href="#">
                             <div class="card_image_portrait"><img src="images/activites/4_small/vieux_port.jpg" alt="auberge" /></div>
                     
-                            <div class="card_titre">
+                            <div class="card_titre_activites">
                                 <p class="gras style_titre">Vieux Port</p>
                             </div>
                         </a>
@@ -306,7 +306,7 @@
                             <a href="#">
                                 <div class="card_image_paysage pomegues_image"><img src="images/activites/4_small/pomègues.jpg" alt="auberge" /></div>
                         
-                                <div class="card_titre">
+                                <div class="card_titre_activites">
                                     <p class="gras style_titre">Fort de Pomègues</p>
                                 </div>
                             </a>
@@ -316,7 +316,7 @@
                             <a href="#">
                                 <div class="card_image_paysage frioul_image"><img src="images/activites/4_small/frioul.jpg" alt="auberge" /></div>
                         
-                                <div class="card_titre">
+                                <div class="card_titre_activites">
                                     <p class="gras style_titre">Îles du Frioul</p>
                                 </div>
                             </a>
@@ -328,7 +328,7 @@
                         <a href="#">
                             <div class="card_image_portrait"><img src="images/activites/4_small/calanques.jpg" alt="auberge" /></div>
                     
-                            <div class="card_titre">
+                            <div class="card_titre_activites">
                                 <p class="gras style_titre">Parc National des Calanques</p>
                             </div>
                         </a>
@@ -339,7 +339,7 @@
                             <a href="#">
                                 <div class="card_image_paysage"><img src="images/activites/4_small/notre_dame.jpg" alt="auberge" /></div>
                         
-                                <div class="card_titre">
+                                <div class="card_titre_activites">
                                     <p class="gras style_titre">Notre-Dame-de-la-Garde</p>
                                 </div>
                             </a>
@@ -349,7 +349,7 @@
                             <a href="#">
                                 <div class="card_image_paysage"><img src="images/activites/4_small/longchamp.jpg" alt="auberge" /></div>
                         
-                                <div class="card_titre">
+                                <div class="card_titre_activites">
                                     <p class="gras style_titre">Parc Longchamp</p>
                                 </div>
                             </a>

@@ -14,6 +14,11 @@ body
     font-weight: bold;
 }
 
+.gris
+{
+    color: #d9d9d9;
+}
+
 /** Header **/
 header
 {
@@ -21,7 +26,6 @@ header
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 5%;
 }
 
 #booki_img
@@ -31,17 +35,17 @@ header
 
 #nav
 {
-    width: 30%;
     display:flex;
     justify-content: center;
 }
 
 .nav_bouton
 {
-    padding: 40px;
+    width: 170px;
     font-size: large;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav_bouton:hover
@@ -62,11 +66,6 @@ a
 h1
 {
     font-size: 25px;
-}
-
-.gris
-{
-    color: #d9d9d9;
 }
 
 /** Formulaire de recherche**/
@@ -90,12 +89,10 @@ input
 .submit
 {
     font-size:large;
-    font-weight: bold;
     color: white;
     background-color: #0065FC;
-    border-right: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    padding: 10px;
+    width: 140px;
 }
 /** Fin de formulaire de recherche **/
 
@@ -104,7 +101,7 @@ input
 {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 20px 10px 0;
+    margin: 10px 0px 10px 0;
     align-items: baseline;
 }
 
@@ -134,6 +131,7 @@ input
 {
     margin: -5px 15px;
     font-size: large;
+    font-weight: bold;
 }
 
 .icone
@@ -143,6 +141,7 @@ input
     padding: 10px;
     border: 2px solid #deebff;
     border-radius: 20px;
+    color: #0065FC;
 }
 
 .loge_dispo
@@ -150,6 +149,7 @@ input
     display: flex;
     align-items: baseline;
 }
+
 /** Fin partie Filtres **/
 
 .text_info
@@ -213,11 +213,11 @@ input
 .card_hebergements
 {
     width: 30%;
-    height: 45%;
+    height: 260px;
     background-color: white;
     border: 1px solid #f2f2f2;
     border-radius: 30px;
-    box-shadow: 5px 5px 10px #f2f2f2;
+    box-shadow: 1px 1px 10px #d9d9d9;
     padding: 5px;
     margin: 10px 0;
 }
@@ -225,8 +225,25 @@ input
 .card_body
 {
     text-align: left;
-    width: 100%;
+    width: 90%;
+    height: 100%;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_titre 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 67%;
+}
+
+.p_hebergements
+{
+    margin: 5px 0;
 }
 
 .card_image
@@ -251,6 +268,7 @@ h3
 {
     color: #0065FC;
 }
+
 .titre
 {
     display: flex;
@@ -272,12 +290,11 @@ h3
 .card_pop
 {
     width: 100%;
-    height: 28%;
-    max-height: 30%;
+    height: 170px;
     background-color: white;
     border: 1px solid #f2f2f2;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px #f2f2f2;
+    box-shadow: 1px 1px 10px #d9d9d9;
     padding: 5px;
     margin: 10px 10px;
 }
@@ -286,8 +303,11 @@ h3
 {
     font-size: 15px;
     margin-left: 10px;
-    height: 100%;
+    height: 85%;
     margin: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card_image_pop
@@ -324,6 +344,7 @@ h3
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -331,14 +352,12 @@ h3
 {
     flex-direction: row;
     margin: auto;
-    width: 25%;
+    width: 23%;
     height: 413px;
-    margin: 10px 20px;
-    border: 1px solid #f2f2f2;
+    margin: 10px 0;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px #f2f2f2;
+    box-shadow: 1px 1px 10px #d9d9d9;
 }
-
 .card_image_portrait img
 {
     width: 100%;
@@ -351,9 +370,8 @@ h3
 {
     width: 100%;
     height: 200px;
-    border: 1px solid #f2f2f2;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px #f2f2f2;
+    box-shadow: 1px 1px 10px #d9d9d9;
     margin-bottom: 10px;
 }
 
@@ -370,9 +388,18 @@ h3
     object-fit: cover;
 }
 
+.card_titre_activites
+{
+    display: flex;
+    height: 47px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .fort_pomegues
 {
-    height: 250px;
+    height: 55%;
 }
 
 .pomegues_image
@@ -382,25 +409,26 @@ h3
 
 .frioul
 {
-    height: 150px;
+    height: 40%;
+    margin-bottom: 0;
 }
 
 .frioul_image
 {
-    height: 67%;
+    height: 70%;
 }
 
 .row
 {
     flex-direction: column;
-    width: 25%;
-    margin: 10px;
-    height: 400px;
+    width: 23%;
+    margin: 10px 0;
+    height: 425px;
 }
 
 .style_titre
 {
-    margin: 0px 0 0 5px;
+    margin: 0px 0 0 10px;
 }
 
 /** Fin de section Activités à Marseille **/
@@ -423,6 +451,7 @@ footer
     width: 100%;
     margin-top: 20px;
     background-color: #f2f2f2;
+    padding: 40px 0px;
 }
 
 .bloc_footer
@@ -446,26 +475,18 @@ footer
     .populaires, .card_pop, .hebergements_marseille
     {
         width: 100%;
-    }
-
-    .populaires
-    {
-        max-width: 100%;
-    }
-
-    .card_image_pop
-    {
-        height: 150px;
-    }
-
-    .card_hebergements
-    {
-        height: 270px;
+        margin: 10px 0;
     }
 }
 
 @media screen and (max-width: 768px)
 {
+    #bloc_page
+    {
+        margin: 0;
+        width: 100%;
+    }
+
     #booki_img
     {
         margin: auto;
@@ -497,10 +518,11 @@ footer
         height: 100%;
     }
 
-    .hebergements_marseille
+    .hebergements_marseille, #activites_marseille
     {
         background-color: white;
-        margin: 0;
+        margin: auto;
+        width: 97%;
     }
 
     .p_style {
@@ -514,8 +536,8 @@ footer
 
     .nav_bouton
     {
-
-        padding: 10px 30px;
+        width: 100%;
+        height: 35px;
         font-size: large;
         border-bottom: 3px solid #f2f2f2;
     }
@@ -549,14 +571,14 @@ footer
         width: 100%;
         height: 200px;
         margin: 0;
-        margin-bottom: -40px;
+        margin-bottom: -35px;
     }
 
     .activites_card_paysage
     {
         width: 100%;
         height: 200px;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     #activites_marseille
@@ -564,9 +586,14 @@ footer
         justify-content: space-between;
     }
 
-    .card_image_portrait img 
+    .card_image_portrait img
     {
         height: 150px;
+    }
+
+    .frioul_image, .pomegues_image
+    {
+        height: 78%;
     }
 
     footer 
